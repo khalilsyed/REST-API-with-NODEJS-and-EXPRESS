@@ -105,6 +105,6 @@ Here's a brief explanation of how Postman was used with the provided code:
    - Set the required headers (`ssn`, `firstname`, `lastname`).
    - Send the request and observe the response, which should indicate the successful deletion of the patient's records.
 
-Postman environment is configured appropriately with the correct base URL (`http://localhost:3000/` in this case) and the date valid for the headers is valid in my requests.
+Postman environment is configured appropriately with the correct base URL (`http://localhost:3000/` in this case) and the data for the headers is valid in my requests.
 
 By using Postman, you can interact with the API endpoints defined in the code and test the functionality of the server.
