@@ -77,3 +77,34 @@ This code is a simple Node.js application using the Express framework to create 
     The application listens on port 3000 for incoming requests.
 
 Please note that this is a basic example, and in a production environment, you would likely want to implement additional security measures, validation checks, and potentially connect to a database to persistently store patient information and medical records.
+
+
+Here's a brief explanation of how Postman was used with the provided code:
+
+1. **GET Request for Medical Records:**
+   - Set the request type to GET.
+   - Set the URL to `http://localhost:3000/records`.
+   - Add the required headers, including `ssn`, `firstname`, and `lastname`.
+   - Send the request and observe the response.
+
+2. **POST Request to Create a New Patient:**
+   - Set the request type to POST.
+   - Set the URL to `http://localhost:3000/`.
+   - Set the required headers (`ssn`, `firstname`, `lastname`, `phone`) in the request.
+   - Send the request and observe the response, which should include the updated list of patients.
+
+3. **PUT Request to Update Patient Phone Number:**
+   - Set the request type to PUT.
+   - Set the URL to `http://localhost:3000/`.
+   - Set the required headers (`ssn`, `firstname`, `lastname`) and provide the updated phone number in the request body.
+   - Send the request and observe the response, which should include the updated patient information.
+
+4. **DELETE Request to Delete Patient Records:**
+   - Set the request type to DELETE.
+   - Set the URL to `http://localhost:3000/`.
+   - Set the required headers (`ssn`, `firstname`, `lastname`).
+   - Send the request and observe the response, which should indicate the successful deletion of the patient's records.
+
+Postman environment is configured appropriately with the correct base URL (`http://localhost:3000/` in this case) and the date valid for the headers is valid in my requests.
+
+By using Postman, you can interact with the API endpoints defined in the code and test the functionality of the server.
